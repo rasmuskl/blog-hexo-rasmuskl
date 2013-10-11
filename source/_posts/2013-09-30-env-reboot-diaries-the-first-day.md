@@ -13,9 +13,7 @@ Likes so far:
 
 *   The virtual screens and navigating options are pleasant to work with. I've actually just been working on the Macbook without an external screen today. 
 *   The terminal. Tab completion etc seems more natural than both `cmd` and PowerShell. Will have to look at term replacements though, obviously.
-*   Stronger package management. I've been using `homebrew` and `homebrew-cask` to install stuff. Installing Spotify with `homebrew cask install spotify` is a winner in my book. This has improved a bit on the Windows side of things with [Chocolatey][1] though.
-
- [1]: http://chocolatey.org/
+*   Stronger package management. I've been using `homebrew` and `homebrew-cask` to install stuff. Installing Spotify with `homebrew cask install spotify` is a winner in my book. This has improved a bit on the Windows side of things with [Chocolatey](http://chocolatey.org/) though.
 
 Dislikes so far:
 
@@ -27,8 +25,4 @@ Dislikes so far:
 
 I've been addicted to perfecting IDE use for quite some time. Give me Visual Studio and ReSharper and I'll slice and dice C# code with my hands behind my back. Tools like ReSharper are huge boosters - not just for writing code, but also for molding existing code into new shapes and even more importantly, for navigating, reading and understanding code. And while I am a huge fan - I've also come to realize that these tools sometimes become a prison. Introducing new technology that depends on some new file type into the Microsoft world more or less requires Visual Studio integration. In my experience, developers will be very reluctant to adopt it (myself included), if it doesn't have Intellisense for instance.
 
-So while I've considered starting out with Jetbrains' RubyMine, I've decided to try a text editor instead - at least for now. I actually thought I was going to pick Sublime Text, but in the end I decided to give vim a try. I've run through `vimtutor` tonight and plan to do it again tomorrow - and got a basic `.vimrc` config up and running. For now, I'm going to try and keep the number of plugins down - but have install [Vundle][2] for managing plugins, the [solarized][3] theme and [vim-airline][4] as an improved status bar.
-
- [2]: https://github.com/gmarik/vundle
- [3]: https://github.com/altercation/vim-colors-solarized
- [4]: https://github.com/bling/vim-airline
+So while I've considered starting out with Jetbrains' RubyMine, I've decided to try a text editor instead - at least for now. I actually thought I was going to pick Sublime Text, but in the end I decided to give vim a try. I've run through `vimtutor` tonight and plan to do it again tomorrow - and got a basic `.vimrc` config up and running. For now, I'm going to try and keep the number of plugins down - but have install [Vundle](https://github.com/gmarik/vundle) for managing plugins, the [solarized](https://github.com/altercation/vim-colors-solarized) theme and [vim-airline](https://github.com/bling/vim-airline) as an improved status bar.
