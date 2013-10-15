@@ -2,9 +2,9 @@
 layout: post
 title: "Tips for decluttering Visual Studio 2010"
 date: 2012-02-28 16:19:34
-comments: true
-categories: [Visual Studio, Tips]
+tags: [Visual Studio, Tips]
 ---
+
 [Mogens Heller Grabe](http://mookid.dk/oncode/) wrote a [nice post](http://mookid.dk/oncode/archives/2725) about reducing the amount of clutter in your Visual Studio the other day – and I thought I’d chime in with a few tips.
   
 ## Hiding the Navigation bar

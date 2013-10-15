@@ -1,9 +1,13 @@
+---
+layout: post
 title: Releasing my ReSharper Course Material
 date: 2013-06-13 18:09:00
-categories: [Courses, Presentations, ReSharper]
+tags: [Courses, Presentations, ReSharper]
 ---
 
-<img src="/wp-content/uploads/resharper.jpg"  width="186" height="152" class="alignright size-full wp-image-287" />I've decided to release my ReSharper course material under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/).
+{% img right /wp-content/uploads/resharper.jpg %}
+
+I've decided to release my ReSharper course material under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/).
 
 The material can be found at on [GitHub](http://github.com/rasmuskl/ReSharperCourse).
 

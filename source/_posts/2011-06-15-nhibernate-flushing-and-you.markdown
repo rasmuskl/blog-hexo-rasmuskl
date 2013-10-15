@@ -2,8 +2,7 @@
 layout: post
 title: "NHibernate Flushing and You"
 date: 2011-06-15 01:47:21
-comments: true
-categories: [NHibernate]
+tags: [NHibernate]
 ---
 Working with NHibernate, you will eventually have to know something about flushing. Flushing is the process of persisting the current session changes to the database. In this post, I will explain how flushing works in NHibernate, which options you have and what the benefits and disadvantages are.
   

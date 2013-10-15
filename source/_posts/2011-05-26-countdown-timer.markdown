@@ -2,8 +2,7 @@
 layout: post
 title: "Countdown timer"
 date: 2011-05-26 22:38:05
-comments: true
-categories: [Presentations]
+tags: [Presentations]
 ---
 I demoed a small app today at the Demo Dag session at Community Day.
   

@@ -1,6 +1,8 @@
+---
+layout: post
 title: Env Reboot Diaries - The First Day
 date: 2013-09-30 21:25:23
-categories: [EnvReboot, Vim]
+tags: [EnvReboot, Vim]
 ---
 
 Today was the first day of my new job. I've always been a Windows user except for when using university computers - and my professional career has mainly consisted of .NET C# development. My new job is in a polyglot environment, the main language is Ruby - but there's also CoffeeScript and Clojure. I'll also be doing it on a Macbook Pro instead of my usual Windows machine. I thought it would be interesting to capture some of the thoughts as I go through learning a new OS and a new development stack.

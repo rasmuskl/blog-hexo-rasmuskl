@@ -2,8 +2,7 @@
 layout: post
 title: "Not GOTOing"
 date: 2012-09-30 22:35:32
-comments: true
-categories: [GOTO]
+tags: [GOTO]
 ---
 GOTO starts tomorrow. Unfortunately, I will not be attending anyway. I think it’ll be an great conference. I really hope to attend next year.
   

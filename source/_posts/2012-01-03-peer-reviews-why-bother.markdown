@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "Peer Reviews – Why bother?"
+title: "Peer Reviews - Why bother?"
 date: 2012-01-03 23:58:38
-comments: true
-categories: [Craftsmanship, Thoughts]
+tags: [Craftsmanship, Thoughts]
 ---
 {% img right /post-images/stamp.jpg %}
 
 Working with code is tricky business – the larger and more complex the code base, the more tricky. Ingraining micro-processes into your work day can help fix some of the issues, some of the broken windows that grow into almost any code base over time. Peer reviews is a great starting point.
   
-There are many forms of peer review – but this post is mainly about informal check-in reviews. The process is simple: Any commit to the code repository must be signed off by another member of the team. Many argue that small commits are okay to go unchecked – but the size of a “small commit” grows in my experience. My counterargument is that a small commit will only take 30 seconds or less. Simply bring up the change set, go over the changes, discuss anything needed informally, then add “Review: &lt;initials&gt;” to the commit message and fire away.
+There are many forms of peer review – but this post is mainly about informal check-in reviews. The process is simple: Any commit to the code repository must be signed off by another member of the team. Many argue that small commits are okay to go unchecked - but the size of a “small commit” grows in my experience. My counterargument is that a small commit will only take 30 seconds or less. Simply bring up the change set, go over the changes, discuss anything needed informally, then add "Review: &lt;initials&gt;" to the commit message and fire away.
   
 ## Benefits?
   

@@ -2,8 +2,7 @@
 layout: post
 title: "Slides from Miracle Open World"
 date: 2010-04-20 22:52:57
-comments: true
-categories: [Presentations, ReSharper, ASP.NET MVC]
+tags: [Presentations, ReSharper, ASP.NET MVC]
 ---
 Last week I gave two talks at MOW2010. Was an awesome conference and the 80% talks + 80% networking concept really held true. Hope to be going again next year – as speaker or otherwise. Here is the slides from my two talks.
   

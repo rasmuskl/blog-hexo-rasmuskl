@@ -1,8 +1,8 @@
+---
+layout: post
 title: Surviving no media keys on your new keyboard
 date: 2013-03-19 19:41:42
-categories:
-- AutoHotKey
-- Tips
+tags: [AutoHotKey, Tips]
 ---
 
 I've recently acquired a new keyboard, after using my trusty old Logitech for many years. I've come to rely on my media keys and the volume wheel for controlling Spotify or other apps. 
@@ -18,15 +18,15 @@ My solution is to use [AutoHotKey](http://www.autohotkey.com) to bind the follow
 
 Here's the script to add to AHK:
 
-<pre lang="autohotkey">
+``` autohotkey
 #Numpad4::Send {Media_Prev}
 #Numpad5::Send {Media_Play_Pause}
 #Numpad6::Send {Media_Next}
 #Numpad2::Send {Volume_Down}
 #Numpad7::Send {Volume_Mute}
 #Numpad8::Send {Volume_Up}
-</pre>
+```
 
 ... and on a final semi-unrelated note, I'll recommend my new mechanical keyboard - [Das Keyboard S Ultimate Silent](http://www.daskeyboard.com/model-s-ultimate-silent/). It's far from silent - but it's an awesome keyboard. The keys have a very nice feel as you're typing along and the keyboard itself is rather heavy (almost 2kg) and thus stay completely in place when typing.
 
-<img src="/post-images/mechanical_keyboard_hero.jpg" class="center" />
+{% img center /post-images/mechanical_keyboard_hero.jpg %}

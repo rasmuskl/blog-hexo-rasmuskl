@@ -2,9 +2,9 @@
 layout: post
 title: "GOTOing this year!"
 date: 2012-08-31 19:43:00
-comments: true
-categories: [GOTO]
+tags: [GOTO]
 ---
+
 I'm happy to announce that I will be going to [GOTO 2012 Aarhus](http://gotocon.com/aarhus-2012/) in October. [Trifork](http://www.trifork.com/) invited me as a blogger, and as such I will be writing blog posts before, under and after the conference. Even though the invitation includes a free ticket, you can rest assured that my future posts about GOTO will contain only my opinion expressed in my words.
 
 The agenda for the conference has been posted and while there's no dedicated .NET track, the speaker list does include [Anders Hejlsberg](http://gotocon.com/aarhus-2012/speaker/Anders+Hejlsberg) and [Scott Hanselman](http://gotocon.com/aarhus-2012/speaker/Scott+Hanselman). I'm also looking forward to seeing [Dan North](http://gotocon.com/aarhus-2012/speaker/Dan+North) speak again, I was really sold on his talks last year at Öredev. Track-wise I'm definitely going to attend talks in Continuous Delivery, JavaScript, Languages, Hard things made easy and It's about the people, stupid.

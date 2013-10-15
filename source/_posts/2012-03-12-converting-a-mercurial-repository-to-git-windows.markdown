@@ -2,8 +2,7 @@
 layout: post
 title: "Converting a Mercurial repository to Git (Windows)"
 date: 2012-03-12 22:43:09
-comments: true
-categories: [Source Control, Git, Mercurial, Tips]
+tags: [Source Control, Git, Mercurial, Tips]
 ---
 
 After going through the pain of (re-)discovering how to convert a Mercurial repository into a Git repository on Windows, I thought I’d share how easy it really is. I’ve bounced back and forth between Mercurial and Git a few times – my current preference is Git, mainly because I like Git’s branching strategy a bit better – but really, they’re both excellent choices. I still find the best analogy for comparing them is that [Git is MacGyver and Mercurial is James Bond](http://importantshock.wordpress.com/2008/08/07/git-vs-mercurial/).

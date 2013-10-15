@@ -2,8 +2,7 @@
 layout: post
 title: "MOW2012: Exploring C# DSLs: LINQ, Fluent Interfaces and Expression Trees"
 date: 2012-04-19 17:41:00
-comments: true
-categories: [Presentations, DSL, Miracle Open World]
+tags: [Presentations, DSL, Miracle Open World]
 ---
 I gave my Exploring C# DSLs: LINQ, Fluent Interfaces and Expression Trees talk today at [Miracle Open World 2012](http://mow2012.dk) about C# Domain Specific Languages.
 

@@ -2,9 +2,9 @@
 layout: post
 title: "Setting up Web Deploy 3.0 / MSDeploy"
 date: 2012-09-27 21:38:22
-comments: true
-categories: [Continuous Integration, MSDeploy, Web Deploy]
+tags: [Continuous Integration, MSDeploy, Web Deploy]
 ---
+
 I’m currently on the path of converting one of my sites from SFTP deployments to using [Web Deploy 3.0](http://www.iis.net/downloads/microsoft/web-deploy) and thought it might be interesting to document the process and the pitfalls that I run into. My approach is roughly based on [this guide](http://www.iis.net/learn/publish/using-web-deploy/configure-the-web-deployment-handler), but it wasn’t a complete fit for me, so here we go.
   
 ## Motivation

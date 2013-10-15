@@ -2,9 +2,9 @@
 layout: post
 title: "Black / Blue Visual Studio 2010 + ReSharper 5 Theme"
 date: 2010-04-20 23:15:11
-comments: true
-categories: [Visual Studio, Themes]
+tags: [Visual Studio, Themes]
 ---
+
 I have been using black background in Visual Studio for as long I can remember. I started out using Rob Conery’s black / orange TextMate theme, but last year I created my own black theme with a blueish style. Today at the [ANUG](http://www.anug.dk) code dojo we tweaked it to actually look alright with the changes in Visual Studio and especially ReSharper.
   
 You can download the theme [here](/files/RKL-blue-theme-vs2010-2010-04-20.zip) if you want a nice black theme.

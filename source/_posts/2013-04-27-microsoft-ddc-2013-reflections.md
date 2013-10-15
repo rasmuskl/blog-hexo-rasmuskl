@@ -1,6 +1,8 @@
+---
+layout: post
 title: Microsoft DDC 2013 Reflections
 date: 2013-04-27 14:07:47
-categories: [Presentations]
+tags: [Presentations]
 ---
 
 A few weeks ago, I attended and spoke at this years Danish Developer Conference by Microsoft. The conference was run in both Horsens and Copenhagen and both venues were cinemas. I gave a talk with Mads Kristensen with the topic of Visual Studio productivity tips. Mads covered plain Visual Studio and I gave a whirlwind tour of what productivity with ReSharper could look like.

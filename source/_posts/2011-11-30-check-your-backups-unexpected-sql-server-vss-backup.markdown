@@ -2,15 +2,14 @@
 layout: post
 title: "Check your backups – unexpected SQL Server VSS backup"
 date: 2011-11-30 00:25:47
-comments: true
-categories: [SQL Server]
+tags: [SQL Server]
 ---
 
 Your backup is only as good as your last restore. I recently changed my backup strategy on my SQL Server 2008 from doing a full nightly backup to doing incremental nightly backups and only a full backup each week. SQL Server incremental backups base themselves on the last <u>full</u> backup. This is nice when you go to restore them since you will only need the full backup + the incremental backup, not any intermediary backups.
 
 However, a few days back I wanted to check some queries on a larger dataset and decided to check my backups at the same time. Fetched full + incremental backups from the server and started the local restore:
 
-{% codeblock lang:sql %}
+``` sql
 RESTORE DATABASE [testdb]
 FROM DISK = N'C:\temp\full.wbak'
 WITH FILE = 1, NORECOVERY, REPLACE
@@ -18,7 +17,7 @@ WITH FILE = 1, NORECOVERY, REPLACE
 RESTORE DATABASE [testdb]
 FROM DISK = N'C:\temp\incremental.bak'
 WITH FILE = 1, RECOVERY
-{% endcodeblock %}
+```
 
 The first backup went through fine, but restoring the incremental backup resulted in the following error message: 
 
@@ -28,7 +27,7 @@ SQL Server refused to restore my incremental database – this is only supposed 
 
 I then explored the backup history a bit further with a query adjusted from the one found in [this](http://blog.sqlauthority.com/2010/11/10/sql-server-get-database-backup-history-for-a-single-database/) post:
 
-{% codeblock lang:sql %}
+``` sql
 SELECT TOP 10
 s.database_name,
 m.physical_device_name,
@@ -37,7 +36,7 @@ FROM msdb.dbo.backupset s
 INNER JOIN msdb.dbo.backupmediafamily m ON s.media_set_id = m.media_set_id
 WHERE s.database_name = DB_NAME() -- Remove this line for all the database
 ORDER BY backup_start_date DESC
-{% endcodeblock %}
+```
 
 The result showed that there had indeed been backups in between my nightly runs:
 

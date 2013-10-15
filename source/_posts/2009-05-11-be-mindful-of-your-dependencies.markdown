@@ -2,8 +2,7 @@
 layout: post
 title: "Be Mindful Of Your Dependencies"
 date: 2009-05-11 20:35:55
-comments: true
-categories: [Craftsmanship, Thoughts, Principles]
+tags: [Craftsmanship, Thoughts, Principles]
 ---
 
 Dependencies are everywhere in your code, you cannot avoid them, without dependencies, your software would make no sense, it is the interaction and collaboration between the software entities that create the program. Now this statement doesn't mean that we should not worry about our dependencies - we just can't remove them completely. But as with almost any other aspect of good software development, we should be mindful of our dependencies.

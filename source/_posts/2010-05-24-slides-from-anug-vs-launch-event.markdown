@@ -2,8 +2,7 @@
 layout: post
 title: "Slides from ANUG VS Launch Event"
 date: 2010-05-24 12:53:33
-comments: true
-categories: [Presentations, ReSharper, ANUG]
+tags: [Presentations, ReSharper, ANUG]
 ---
 I spoke last week about ReSharper 5 at [ANUG](http://www.anug.dk)’s Visual Studio 2010 launch event. 
   
