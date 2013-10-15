@@ -869,7 +869,7 @@ article .entry ul ul,article .entry ol ul,article .entry dl ul,article .entry ul
   {
     font-size:13px;
   }
-  
+
   article header .icon
   {
     display:none;
@@ -881,13 +881,13 @@ article .entry ul ul,article .entry ol ul,article .entry dl ul,article .entry ul
   {
     width:100%;
   }
-  
+
   #main-col
   {
     width:100%;
     margin-right:-300px;
   }
-  
+
   #wrapper
   {
     margin-right:300px;
@@ -900,12 +900,12 @@ article .entry ul ul,article .entry ol ul,article .entry dl ul,article .entry ul
     margin-right:0;
     float:none;
   }
-  
+
   #wrapper
   {
     margin-right:0;
   }
-  
+
   #sidebar
   {
     float:none;
