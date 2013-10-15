@@ -3,7 +3,7 @@ layout: post
 title: "A WinDbg Debugging Journey - NHibernate Memory Leak"
 date: 2008-12-19 20:29:15
 comments: true
-categories: [WinDbg, NHibernate, Debugging]
+tags: [WinDbg, NHibernate, Debugging]
 ---
 *Disclaimer: This is not a stab at the NHibernate team. They are doing an awesome job, it might as well (and for a long time I thought it was) have been in my own code. In addition - the memory leak is already solved on the NHibernate trunk.*
  
@@ -47,9 +47,9 @@ At this point I actually downloaded the NHibernate source and started looking ar
  
 Now WinDbg can actually tell you the "deep" size of an object, object size + objects it references. This is done using the !objsize command. Now this literally took several hours of processing, so I don't have a screenshot for the blog post, but executing `!objsize 067016bc` command should give me the memory size of my SessionFactory. According to my log file, it told me:
 
-{% codeblock %} 
+```
  sizeof(067016bc) =    716798348 (  0x2ab9798c) bytes (NHibernate.Impl.SessionFactoryImpl)
-{% endcodeblock %}
+```
 
 That is one **big** SessionFactory (~700mb). I dug further down the reference chain to try and figure out what was wrong with the cache. Remember I said that this cache was supposed to hold 128 queries. When I got to the hashtable in the cache and dumped it using the `!do 067030d4` command, it revealed the following:
 

@@ -3,9 +3,11 @@ layout: post
 title: "ReSharper Series - Part 0: Installation"
 date: 2009-01-17 11:05:03
 comments: true
-categories: [ReSharper]
+tags: [ReSharper]
 ---
-{% img right /post-images/WindowsLiveWriter/ResharperEventDay0Installation_E3B3/image_thumb.png %}Welcome to the 0. part of my ReSharper series - almost at the "real" ReSharper content now, but we just need to get the Resharper installation out of the way. It's not really that hard either.
+{% img right /post-images/WindowsLiveWriter/ResharperEventDay0Installation_E3B3/image_thumb.png %}
+
+Welcome to the 0. part of my ReSharper series - almost at the "real" ReSharper content now, but we just need to get the Resharper installation out of the way. It's not really that hard either.
  
 ## ReSharper Installation
  

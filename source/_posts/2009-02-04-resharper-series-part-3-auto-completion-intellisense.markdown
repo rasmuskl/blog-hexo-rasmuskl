@@ -2,11 +2,10 @@
 layout: post
 title: "ReSharper Series - Part 3: Auto-completion / Intellisense"
 date: 2009-02-04 21:12:58
-comments: true
-categories: [ReSharper]
+tags: [ReSharper]
 ---
 
-This is the 3. part of my [ReSharper series](http://www.rasmuskl.dk/post/ReSharper-Series.aspx). Today we are going to have a look at how ReSharper helps you complete your code / show options while programming. I know I didn't know about some of these for a long time, maybe there's something new for you as well?
+This is the 3. part of my [ReSharper series](/2009/01/10/resharper-series/). Today we are going to have a look at how ReSharper helps you complete your code / show options while programming. I know I didn't know about some of these for a long time, maybe there's something new for you as well?
  
 ## Standard Symbol Completion
  
@@ -46,7 +45,8 @@ The shortcut to use smart completion is **Ctrl+Alt+Space** [IntelliJ: **Ctrl+Shi
  
 ## Camel Humps
  
-[SÃ¸ren](http://www.publicvoid.dk) mentioned camel humps when I was talking about basic navigation in the last post - and this also holds true for all the auto-completions shown above. If you type upper case letters while completing, it will match camel humps in the list. For example, if I wanted to use a LinkedResourceCollection as seen in the symbol completion example, here's what I could do:
+[Søren](http://www.publicvoid.dk) mentioned camel humps when I was talking about basic navigation in the last post - and this also holds true for all the auto-completions shown above. If you type upper case letters while completing, it will match camel humps in the list. For example, if I wanted to use a LinkedResourceCollection as seen in the symbol completion example, here's what I could do:
+
  
 {% img /post-images/WindowsLiveWriter/ReSharperSeriesPart3IntellisenseCompleti_114CF/image_thumb_9.png %}
  

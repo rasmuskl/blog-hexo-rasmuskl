@@ -3,7 +3,7 @@ layout: post
 title: "Patterns: Iterator And .NET - Yield I Say!"
 date: 2008-11-11 23:24:51
 comments: true
-categories: [C#, Patterns]
+tags: [C#, Patterns]
 ---
 ## Introduction
  
@@ -25,27 +25,27 @@ Iterators are also sometimes used as Generators, where they generate a series of
  
 One of the reasons we rarely think about the Iterator pattern is because it's so embedded into our languages. In the .NET world, an Iterator is actually called an Enumerator - and if we look in the framework documentation, we find an interface named `IEnumerator` that looks something like this (the generic version):
  
-{% codeblock lang:csharp %}
+``` csharp
 public interface IEnumerator<T>
 {
 	bool MoveNext();
 	void Reset();
 	T Current { get; }
 }
-{% endcodeblock %}
+```
 
 This looks a lot like the abstraction described in the Gang of Four book. But how often do you actually see the `IEnumerator` interface in your code - not too often I bet. This is because the pattern is even more tightly integrated into the framework. Digging deeper, we find the `IEnumerable` interface which looks like this:
 
-{% codeblock lang:csharp %}
+``` csharp
 public interface IEnumerable<T>
 {
 	IEnumerator<T> GetEnumerator();
 }
-{% endcodeblock %}
+```
 
 So any class that implements the `IEnumerable` interface is able to supply you with an Iterator. Lots of classes in the .NET framework implement `IEnumerable` - and a naive usage of it might look something like this:
 
-{% codeblock lang:csharp %}
+``` csharp
 void NaiveEnumeration()
 {
 	var list = new ArrayList<int> { 1, 2, 3, 4, 5 };
@@ -57,11 +57,11 @@ void NaiveEnumeration()
 		Console.WriteLine(number);
 	}
 }
-{% endcodeblock %}
+```
 
 But iteration is something we do often - and the pattern has even mandated its own keyword - `foreach` - so when you go like this:
 
-{% codeblock lang:csharp %}
+``` csharp
 void NormalEnumeration()
 {
 	var list = new ArrayList<int> { 1, 2, 3, 4, 5 };
@@ -71,13 +71,13 @@ void NormalEnumeration()
 		Console.WriteLine(number);
 	}
 }
-{% endcodeblock %}
+```
 
 You're actually using the `IEnumerable` and `IEnumerator` interfaces, you just don't see them. Simply put, foreach is really just syntactic sugar for the above construction - conceptually at least.
 
 But this isn't all. Since C# 2.0, there has also been the [yield](http://msdn.microsoft.com/en-us/library/9k7k7cf0.aspx) keyword. Yield can be somewhat tricky to wrap your head around at first, but once you've used it a few times, you really appreciate the power of it. It provides a nice and clean way of implementing the Iterator pattern without worrying too much about managing state. It basically allows you to point out values have the framework create an Iterator for you. The reason it can be somewhat confusing is that it messes with the normal semantics of executing a method. Lets take an example:
 
-{% codeblock lang:csharp %}
+``` csharp
 IEnumerable<int> GetNumbers()
 {
 	var number = 1;
@@ -87,7 +87,7 @@ IEnumerable<int> GetNumbers()
 		number += 1;
 	}
 }
-{% endcodeblock %}
+```
 
 At first sight, this method looks kind of broken. Notice that the function returns an `IEnumerable` - that is: an object that provides an `IEnumerator`. The `IEnumerator` is created for us behind the scenes and whenever it encounters your `yield return` statement, it "freezes" your method and returns this value. When `MoveNext` is called the next time (explicitly or through a foreach loop), the code picks up exactly where it stopped last time - in this case adding 1 to number and yielding once again. Note that even though this code won't loop forever when creating the Iterator, a `foreach` statement using `GetNumbers` will - as expected.
 
@@ -101,14 +101,14 @@ With an external iterator the client of the iterator has the responsibility for 
 
 An internal iterator on the other hand is more declarative, with an internal iterator, we actually don't see the iterator itself, but we provide an operation to be performed on the iterated elements. An example of this is the `ForEach` method defined on `List<T>`. This allows you to pass a delegate that is to be executed on each element in the list. In C# 3.0, using lambdas the above could look something like this:
 
-{% codeblock lang:csharp %}
+``` csharp
 void InternalEnumeration()
 {
 	var list = new ArrayList<int> { 1, 2, 3, 4, 5 };
 	
 	list.ForEach(number => Console.WriteLine(number));
 }
-{% endcodeblock %}
+```
 
 In this case we no longer control the iterator and can't stop after 2 elements if that's what we wanted.
 

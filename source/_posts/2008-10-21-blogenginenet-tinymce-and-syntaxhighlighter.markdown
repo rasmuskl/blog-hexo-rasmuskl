@@ -2,8 +2,7 @@
 layout: post
 title: "BlogEngine.NET, TinyMCE And SyntaxHighlighter"
 date: 2008-10-21 19:55:00
-comments: true
-categories: [BlogEngine]
+tags: [BlogEngine]
 ---
 
 I went through my few posts the other day to put some tags on them using BlogEngine.NETs administration page, but as I finished and went to see the end result, TinyMCE had stripped my syntax highlighting. 

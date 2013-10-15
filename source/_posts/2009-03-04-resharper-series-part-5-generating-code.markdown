@@ -2,10 +2,10 @@
 layout: post
 title: "ReSharper Series - Part 5: Generating Code"
 date: 2009-03-04 21:55:59
-comments: true
-categories: [ReSharper]
+tags: [ReSharper]
 ---
-Welcome to the 5th part of my [ReSharper Series](http://www.rasmuskl.dk/post/ReSharper-Series.aspx) - in this post we are going to take a look at how you can easily generate a lot of the fluff code that surrounds your real functionality.
+
+Welcome to the 5th part of my [ReSharper Series](/2009/01/10/resharper-series/) - in this post we are going to take a look at how you can easily generate a lot of the fluff code that surrounds your real functionality.
  
 While C# is a great language, there is a quite of bit of the code that you write every day that feels somewhat crufty. It is these standard things that we do a thousand times, like writing constructors, properties, backing fields to said properties (better with automatic properties - but you still often need a backing field). Luckily, ReSharper can help ease your pain - or at least let you focus on writing that core functionality - and not worry about the cost of adding another class (in terms of typing).
  

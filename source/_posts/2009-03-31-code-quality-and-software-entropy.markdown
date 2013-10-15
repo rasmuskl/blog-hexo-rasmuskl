@@ -2,8 +2,7 @@
 layout: post
 title: "Code Quality and Software Entropy"
 date: 2009-03-31 22:05:06
-comments: true
-categories: [Craftsmanship, Thoughts]
+tags: [Craftsmanship, Thoughts]
 ---
 {% img right /post-images/WindowsLiveWriter/CodeQualityandYou_1284E/complexity_thumb.jpg %}
 

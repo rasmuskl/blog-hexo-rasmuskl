@@ -2,8 +2,7 @@
 layout: post
 title: "Design By Contract Preconditions With Expression Trees"
 date: 2008-11-06 23:58:28
-comments: true
-categories: [Design by Contract, C#]
+tags: [Design by Contract, C#]
 ---
 
 ## Introduction
@@ -24,7 +23,7 @@ So why is this even important? One of the merits of Design by Contract are that 
  
 Lets do a simple example to illustrate why this might be useful, consider the following two classes:
  
-{% codeblock lang:csharp %}
+``` csharp
 public class Person
 {
     public Person(string name)
@@ -45,24 +44,24 @@ public class Account
         return _owner.Name;
     }
 }
-{% endcodeblock %}
+```
 
 It seems that the writer of the Account class is implying that an Account object should have an owner - an instance of Person. However, there's nothing to stop a potential client from doing this:
 
-{% codeblock lang:csharp %}
+``` csharp
 static void Main(string[] args)
  {
      var account = new Account(null);
      Console.WriteLine(account.GetOwnerName());
  }
-{% endcodeblock %}
+```
 
 This fails with a NullReferenceException in line 4 with the following stack trace:
 
-{% codeblock %}
+```
 DbCExpressionTrees.exe!DbCExpressionTrees.Account.GetOwnerName() Line 17    C#
 DbCExpressionTrees.exe!DbCExpressionTrees.Program.Main(string[] args = {string[0]}) Line 13 + 0xa bytes C#
-{% endcodeblock %}
+```
 
 Now this example is very contrived, since it's blatantly obvious where the bug is. But still, consider if the call to GetOwnerName had been in a completely different layer of the application, maybe even minutes after the Account object had been created. I'm sure you've had your fun with your debugger tracking down errors like this, if you've done any moderate size programs - I know I have. 
 
@@ -70,21 +69,21 @@ What we need is a way for the writer of the Account class to communicate a stron
 
 Returning to the fail-fast principle - why is this useful? Consider the following change to the Account constructor:
 
-{% codeblock lang:csharp %}
+``` csharp
 public Account(Person owner)
 {
     if(owner == null)
         throw new ArgumentNullException("owner");
     _owner = owner;
 }
-{% endcodeblock %}
+```
 
 Executing the client code from before, our program will now fail when trying to create the invalid Account object with the following stack trace - and a clearly readable exception message (that owner is not allowed to be null):
 
-{% codeblock %}
+```
 DbCExpressionTrees.exe!DbCExpressionTrees.Account.Account(DbCExpressionTrees.Person owner = null) Line 13   C#
 DbCExpressionTrees.exe!DbCExpressionTrees.Program.Main(string[] args = {string[0]}) Line 12 + 0x17 bytes    C#
-{% endcodeblock %}
+```
 
 The benefit here is that this stack trace points directly to the first offense against the "contract". Consider the differences in debugging time on the two examples. Examples like this could also be made for postconditions and invariants.
 
@@ -96,7 +95,7 @@ Realistically, I preconditions are only viable part of Design by Contract to imp
 
 Now, Søren and Andrew (the Glitch) used a general Requires method for defining their preconditions. Søren's looks like this:
 
-{% codeblock lang:csharp %}
+``` csharp
 public static void Require(this T obj,
     Expression<Func<bool>> booleanExpression)
 {
@@ -106,7 +105,7 @@ public static void Require(this T obj,
          “Violation of precondition: ”
          + booleanExpression.ToNiceString());
 }
-{% endcodeblock %}
+```
 
 When using a lambda wrapped in an expression, we don't get the delegate that we're used to, instead we get something that resembles an [abstract syntax tree](http://en.wikipedia.org/wiki/Abstract_syntax_tree) that represents the expression. This is what enables us to pull various information about the expression. As shown above, the expression can then be compiled into the delegate that we're used to and executed.
 
@@ -118,7 +117,7 @@ The example I'll show here is the same I did in my example earlier namely checki
 
 My ArgumentNotNull method defined on my static Check class looks like this:
 
-{% codeblock lang:csharp %}
+``` csharp
 public static void ArgumentNotNull<T>(
      Expression<Func<T>> argumentExpression) where T : class
 {
@@ -141,23 +140,23 @@ public static void ArgumentNotNull<T>(
     if (fieldInfo != null && fieldInfo.GetValue(methodOwner) == null)
         throw new ArgumentNullException(memberExp.Member.Name);
 }
-{% endcodeblock %}
+```
 
 The use in the Account class will look like this:
 
-{% codeblock lang:csharp %}
+``` csharp
 public Account(Person owner)
 {
     Check.ArgumentNotNull(() => owner);
     _owner = owner;
 }
-{% endcodeblock %}
+```
 
 and it will throw an exception that looks exactly like the one in my first example, so all the expression / reflection magic was really just to extract the argument name in a type-safe way. The ArgumentNotNull expects only lambda expressions containing a single argument and can thus make assumptions on the generated expression and pull the field value directly from the correct instance without compiling the expression.
 
 But writing these specialized methods takes longer time and the Requires method can capture infinitely more conditions - so is this really worth it performance-wise? I did a small micro-benchmark - **note: I've focused on the scenario where there's no error, since it by far the most common occurrence - we don't really care about performance if we're killing the program with an exception.**
 
-{% codeblock lang:csharp %}
+``` csharp
 static void Main(string[] args)
 {
     var timerArgumentNotNull = new Stopwatch();
@@ -186,7 +185,7 @@ private static void TestMethodWithRequire(Object obj)
 {
     Check.Requires(() => obj != null);
 }
-{% endcodeblock %}
+```
 
 And the results were as follows:
 

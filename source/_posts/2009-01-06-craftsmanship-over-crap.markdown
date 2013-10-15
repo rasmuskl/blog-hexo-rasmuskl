@@ -2,8 +2,7 @@
 layout: post
 title: "Craftsmanship over Crap"
 date: 2009-01-06 19:55:07
-comments: true
-categories: Thoughts
+tags: Thoughts
 ---
 
 I was catching up on my blog reading ([ObjectMentor](http://blog.objectmentor.com/) to be more specific) when I found Uncle Bob's [post](http://blog.objectmentor.com/articles/2008/08/14/quintessence-the-fifth-element-for-the-agile-manifesto) on quintessence as the fifth element for the Agile Manifesto. His statement of "Craftsmanship over Crap" really rang true with me. 

@@ -2,9 +2,9 @@
 layout: post
 title: "Craftsmanship In The Wild"
 date: 2009-03-07 22:38:40
-comments: true
-categories: [Craftsmanship, Thoughts]
+tags: [Craftsmanship, Thoughts]
 ---
+
 {% img right /post-images/WindowsLiveWriter/CraftsmanshipInTheWild_13E6C/image_thumb.png %}
 
 I was out dining today and had an experience I simply had to share. It was a moderately expensive restaurant and they had cocktails as part of their menu. 

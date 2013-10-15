@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Code Coverage – What You Need To Know"
+title: "Code Coverage - What You Need To Know"
 date: 2009-02-23 00:34:05
-comments: true
-categories: [Code Coverage, Testing]
+tags: [Code Coverage, Testing]
 ---
+
 People often talk about the percentage of code coverage they have from unit tests, whether it be actual coverage or the goal they or their project have set. Having a high coverage percentage is often seen as a quality, but code coverage is not really a metric that gives much value in itself. In this post I want to investigate the different types of code coverage that exists and address some of the problems with code coverage.
   
 ## Types of Code Coverage
@@ -21,11 +21,11 @@ The coverage type we usually talk about is actually <u>statement coverage</u> �
   
 Another thing that is very hard to measure with code coverage is multi-threaded behavior. It is definitely not caught in our statement coverage and if getting full path coverage is hard, consider getting full path coverage with multiple threads.
   
-## One Problem – Test Quality
+## One Problem - Test Quality
   
 The problem with using code coverage on its own is that code coverage tells you nothing about the quality of the tests that cover the code. Code coverage tells you how much of your code has actually been executed, but it tells you nothing about the asserts that were made in the tests – that is, it says nothing about the correctness of the code. 
   
-The perfect example of this is writing a test with zero asserts (state or interaction). This test will produce a certain percentage of coverage, while ensuring nothing except that the code can successfully execute. While such sanity tests can be useful in some tricky cases with exceptions, this is often a worthless test – it has no quality whatsoever, it doesn’t verify any intent of the programmer who wrote the code it is testing. 
+The perfect example of this is writing a test with zero asserts (state or interaction). This test will produce a certain percentage of coverage, while ensuring nothing except that the code can successfully execute. While such sanity tests can be useful in some tricky cases with exceptions, this is often a worthless test - it has no quality whatsoever, it doesn't verify any intent of the programmer who wrote the code it is testing. 
   
 The thing that is easy to sell about code coverage is that is is reasonably easy to measure. It is easy to set a percentage, a goal and then try to obtain this goal. 100% code coverage is a great goal – it might be unrealistic in most situations, but it is a good thing to strive towards. But if the tests suck or the programmers who write the tests become lazy the code coverage will be nothing but misleading.
   
@@ -35,7 +35,7 @@ The solution, to me, is discipline and good engineering principles. Code coverag
   
 ## The Inverse Property
   
-One of the things I like best about code coverage is it’s quality as an inverse property – that is, a tool that can specifically tell me which parts of my code that I have not tested. This is a clear signal that you need to be more careful when touching this code. 
+One of the things I like best about code coverage is it's quality as an inverse property - that is, a tool that can specifically tell me which parts of my code that I have not tested. This is a clear signal that you need to be more careful when touching this code. 
   
 This is also one of the reasons that I actually like to remove tests that either are very low quality or haven’t kept up to date with the intent of the code they are testing. The ideal solution is to rewrite the tests to match the intent of the code / desired quality, but this is not always realistic. To me, such tests are more harmful than no tests at all – they give a false sense of security and will only confuse if anyone look at them. At least if there is no tests my coverage tool can tell me there is a problem in this part of the system.
   

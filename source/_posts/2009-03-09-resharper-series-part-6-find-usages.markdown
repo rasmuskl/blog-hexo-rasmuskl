@@ -2,11 +2,10 @@
 layout: post
 title: "ReSharper Series - Part 6: Find Usages"
 date: 2009-03-09 21:54:42
-comments: true
-categories: [ReSharper]
+tags: [ReSharper]
 ---
 
-This is the 6th post in my [ReSharper Series](http://www.rasmuskl.dk/post/ReSharper-Series.aspx) - this time we are going to look at how to find usages of particular code members in your code. While plain old text search can be useful sometimes, a structured search is really awesome for getting a good overview. In addition, the standard ReSharper setup on this feature is rather bad compared to what is possible, so a bit of UI tweaking (very simple) is also available.
+This is the 6th post in my [ReSharper Series](/2009/01/10/resharper-series/) - this time we are going to look at how to find usages of particular code members in your code. While plain old text search can be useful sometimes, a structured search is really awesome for getting a good overview. In addition, the standard ReSharper setup on this feature is rather bad compared to what is possible, so a bit of UI tweaking (very simple) is also available.
  
 ## Find Usages
  

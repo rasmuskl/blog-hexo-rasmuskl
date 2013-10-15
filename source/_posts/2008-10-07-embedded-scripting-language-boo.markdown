@@ -3,7 +3,7 @@ layout: post
 title: "Embedded Scripting Language? Boo!"
 date: 2008-10-07 21:59:00
 comments: true
-categories: [Scripting, Boo, C#]
+tags: [Scripting, Boo, C#]
 ---
 ## Setting the stage
 

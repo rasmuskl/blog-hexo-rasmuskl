@@ -2,10 +2,10 @@
 layout: post
 title: "ReSharper Series - Part 2: Basic Navigation"
 date: 2009-01-27 22:42:46
-comments: true
-categories: [ReSharper]
+tags: [ReSharper]
 ---
-At part 2 of the [ReSharper series](http://www.rasmuskl.dk/post/ReSharper-Series.aspx), we will attempt to enable more "no mouse survival". We will take a look at navigating between files without using the mouse. This is also a great chance to mention that not all the stuff you will see here is exclusive ReSharper stuff, some times I will throw in some Visual Studio shortcuts - the essence is to increase productivity - not religiously using one product for everything. In addition I have been using the combination for so long that I am often confused what is what.
+
+At part 2 of the [ReSharper series](/2009/01/10/resharper-series/), we will attempt to enable more "no mouse survival". We will take a look at navigating between files without using the mouse. This is also a great chance to mention that not all the stuff you will see here is exclusive ReSharper stuff, some times I will throw in some Visual Studio shortcuts - the essence is to increase productivity - not religiously using one product for everything. In addition I have been using the combination for so long that I am often confused what is what.
  
 ## Opening Files
  

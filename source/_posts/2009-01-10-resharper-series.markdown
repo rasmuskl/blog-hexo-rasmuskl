@@ -2,8 +2,7 @@
 layout: post
 title: "ReSharper Series"
 date: 2009-01-10 12:43:03
-comments: true
-categories: ReSharper
+tags: ReSharper
 ---
 As I've mentioned earlier on twitter, I've been planning on doing a ReSharper series on my blog. The idea is to go over ReSharper one part at a time and find some new quirk or feature that I'd like to highlight. I have used ReSharper for a very long time, but want to dig even deeper and try to pass some of the knowledge as well. I have already learned a great deal more just researching for this series.
  

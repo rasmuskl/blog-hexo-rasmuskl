@@ -2,10 +2,10 @@
 layout: post
 title: "ReSharper Series - Part -2: Introduction & Motivation"
 date: 2009-01-10 12:44:47
-comments: true
-categories: ReSharper
+tags: ReSharper
 ---
 {% img right /post-images/WindowsLiveWriter/ResharperEventDay2Motivation_C8A6/image_thumb.png %}  
+
 This is the first and -2. part of my [ReSharper series](http://www.rasmuskl.dk/post/ReSharper-Series.aspx). -2 because it there's still a few parts until I hit real ReSharper content. The subject today will be a quick introduction to ReSharper and the motivation for using it - so why should we?
  
 ## What is ReSharper?

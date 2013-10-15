@@ -3,7 +3,7 @@ layout: post
 title: "Playing with XNA 3.0"
 date: 2008-12-09 21:20:21
 comments: true
-categories: [XNA, C#]
+tags: [XNA, C#]
 ---
 
 Visited my brother this weekend and we played some random [Tower Defense](http://www.towerdefence.net/) games for fun - and I had a lot of ideas for the game and knew that Microsofts game platform [XNA](http://msdn.microsoft.com/en-us/xna/default.aspx) was supposed to be really good.

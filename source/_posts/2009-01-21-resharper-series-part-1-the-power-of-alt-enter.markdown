@@ -2,10 +2,10 @@
 layout: post
 title: "ReSharper Series - Part 1: The Power of Alt+Enter"
 date: 2009-01-21 20:32:45
-comments: true
-categories: [ReSharper]
+tags: [ReSharper]
 ---
-Woo, finally hit part 1 of the [ReSharper series](http://www.rasmuskl.dk/post/ReSharper-Series.aspx) and ready to start on the basics of ReSharper. Today we will look at the basic look and feel after you have installed ReSharper and fired up your Visual Studio. Learn one of the most basic commands.
+
+Woo, finally hit part 1 of the [ReSharper series](/2009/01/10/resharper-series/) and ready to start on the basics of ReSharper. Today we will look at the basic look and feel after you have installed ReSharper and fired up your Visual Studio. Learn one of the most basic commands.
  
 The single thing you will probably use most in ReSharper is the quick-fix command - which is initiated using **Alt+Enter**. This is a context-based command which will suggest actions based on where your cursor is located. ReSharper provides different visual cues to alert you that an action is available. Lets look at a few examples of the versatility of this command.
  

@@ -2,8 +2,7 @@
 layout: post
 title: "Information Overload"
 date: 2008-11-17 18:26:10
-comments: true
-categories: [UI]
+tags: [UI]
 ---
 
 Ran into this at work today. Apparently our Team Foundation Server wanted to tell me something.

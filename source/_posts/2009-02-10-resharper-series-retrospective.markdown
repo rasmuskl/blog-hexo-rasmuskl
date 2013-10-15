@@ -2,8 +2,7 @@
 layout: post
 title: "ReSharper Series - Retrospective?"
 date: 2009-02-10 22:44:00
-comments: true
-categories: [ReSharper]
+tags: [ReSharper]
 ---
 
 Now, I've written the first 4 (7 really) parts of my [ReSharper Series](http://www.rasmuskl.dk/post/ReSharper-Series.aspx) - I was a bit curious if anyone is actually reading it - and if anyone is getting value from it? Personally I am learning quite a bit more than I already knew about ReSharper. So a few questions:

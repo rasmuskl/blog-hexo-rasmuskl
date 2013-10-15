@@ -3,7 +3,7 @@ layout: post
 title: "Patterns and Principles - Getting Started"
 date: 2008-10-24 15:54:54
 comments: true
-categories: [Patterns, Principles]
+tags: [Patterns, Principles]
 ---
 
 ## Introduction

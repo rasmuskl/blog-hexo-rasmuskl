@@ -2,8 +2,7 @@
 layout: post
 title: "Crazy January"
 date: 2009-02-03 22:06:07
-comments: true
-categories: 
+tags: [Career]
 ---
 What a great start on 2009, I only hope the rest of the year will be as eventful as this month. The highlights were:
  

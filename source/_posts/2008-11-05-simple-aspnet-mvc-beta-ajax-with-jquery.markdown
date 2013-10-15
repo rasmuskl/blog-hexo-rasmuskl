@@ -3,7 +3,7 @@ layout: post
 title: "Simple ASP.NET MVC Beta AJAX with jQuery!"
 date: 2008-11-05 21:23:19
 comments: true
-categories: [ASP.NET MVC, C#]
+tags: [ASP.NET MVC, C#]
 ---
 ## Introduction
  
@@ -25,24 +25,24 @@ The solution now already contains a "Scripts" folder that contains Microsoft AJA
  
 Since this was just going to be a demo site, I decided to just use the documented version directly, but this proved to be a bad idea. I encountered a few different runtime JavaScript errors while using this version, more specifically related to the ajaxStart event function. The solution apparently involves a masterpage with the following added to the head section:
 
-{% codeblock lang:csharp %}
+``` csharp
 <% if (false) { %>
 <script type="text/javascript" src="../../Scripts/jquery-1.2.6-vsdoc.js"></script>
 <% } %>
 <script type="text/javascript" src="../../Scripts/jquery-1.2.6.min.js"></script>
-{% endcodeblock %}
+```
 
 The trick here is that Visual Studio will see the vsdoc version and grab documentation from there, but it will never actually load on your pages. As described in the before mentioned post, this will be fixed and in the future it should be enough to reference the original jQuery file and have the vsdoc version present. I also found that the intellisense was kind of flaky (not showing up) sometimes in nested functions, hopefully this will be fixed as well.
 
 Next I grabbed the Index.aspx view in Views/Home and cleared out all the contents of the Content PlaceHolder and added a bit of HTML:
 
-{% codeblock lang:html %}
+``` html
 <div>
     <input type="text" id="name" />
     <a href="#" id="link">Click me!</a>
     <div id="result" style="margin-top: 15px"></div>
 </div>
-{% endcodeblock %}
+```
 
 This is just plain and simple HTML, with a "void" link that doesn't go anywhere. It looks like this:
 
@@ -50,7 +50,7 @@ This is just plain and simple HTML, with a "void" link that doesn't go anywhere.
 
 Now one of the great forces about jQuery is it's power to hook into the DOM using powerful selectors. This means that you can have your JavaScript almost completely separated from your HTML. I've often had several small jQuery files that would completely change the appearance of a page and add all kinds of fancy if they were included. This also makes it very easy to enable / disable effects and even test your page degradation for users who have JavaScript disabled (just remove your script reference). However, for simplicity, I've just included my jQuery directly in a script tag:
 
-{% codeblock lang:html %}
+``` html
 <script type="text/javascript">
     $(document).ready(function() {
         // Register a click handler on our link
@@ -68,26 +68,26 @@ Now one of the great forces about jQuery is it's power to hook into the DOM usin
         }
     });
 </script>
-{% endcodeblock %}
+```
 
 Now I decided not to start doing JavaScript templating and return lots of JSON data. Instead I'm just going to pull a normal HTML page from the HomeController and append the data to the result div. Most of the magic is in the click function which registers a handler to grab the defined page /Home/AjaxHtml with the name entered in the textbox as parameter and to execute the updateResult function when the data comes back. After this it was time to add the action to the HomeController: 
 
-{% codeblock lang:csharp %}
+``` csharp
 public ActionResult AjaxHtml(string name)
 {
     Thread.Sleep(3000);
     return View("AjaxHtml", new { Name=name, Time=DateTime.Now });
 }
-{% endcodeblock %}
+```
 
 Rather simple really. Just sleeps for a few seconds (to allow me to see the load on my local dev machine) and then renders a new view called AjaxHtml with a simple Dictionary containing the passed argument name and the current time as ViewModel. I also added a new View called AjaxHtml:
 
-{% codeblock lang:csharp %}
+``` csharp
 <%@ Page Language="C#" AutoEventWireup="true" 
  CodeBehind="AjaxHtml.aspx.cs" 
  Inherits="MvcAjaxTest.Views.Home.AjaxHtml" %>
 Ajax Call: <%= ViewData.Model %><br />
-{% endcodeblock %}
+```
 
 The only thing to note about this is that I didn't use my normal masterpage for this page - since I'm only interested in passing this little tidbit of HTML back - not my entire page layout. Launching the application again, typing a name and hitting the link produces the following without a full page reload:
 
@@ -105,7 +105,7 @@ Now, after doing all this, it didn't feel so impressive to click the link and wa
 
 Adding the load indicator was a breeze really. I just threw the load indicator in an invisible image after the link:
 
-{% codeblock lang:html %}
+``` html
 <div>
     <input type="text" id="name" />
     <a href="#" id="link">Click me!</a>
@@ -113,16 +113,16 @@ Adding the load indicator was a breeze really. I just threw the load indicator i
       src="../../Content/small-ajax.gif" />
     <div id="result" style="margin-top: 15px"></div>
 </div>
-{% endcodeblock %}
+```
 
 Note that I used the CSS style visibility: hidden instead of using display: none. Both work, but when using display: none, the space for the image is not reserved on the page, which caused a small annoying "jump" effect on my page as the load indicator appeared (and was a few pixels taller than the link text). With the visibility style, space is actually reserved for the image and the line doesn't jump.
 
 All we have left is hooking the load indicator onto jQuerys AJAX call - for a simple scenario like this, the global AJAX events called ajaxStart and ajaxStop are just what we need. ajaxStart will run whenever an AJAX request is started and ajaxStop will run whenever one ends. So at the end of my script block (after the updateResult function), I added the following:
 
-{% codeblock lang:js %}
+``` js
 $("#loading").ajaxStart(function() { $(this).css("visibility", "visible"); });
 $("#loading").ajaxStop(function() { $(this).css("visibility", "hidden"); });
-{% endcodeblock %}
+```
 
 If we had used display: none instead, we could have used the jQuery functions show() and hide() instead of the whole CSS stunt, but I like this better. Firing up the browser and hitting the link now produces enough eye candy to distract my eyes from the 3 second wait:
 
