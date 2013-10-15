@@ -6,25 +6,27 @@ comments: true
 categories: [Scripting, Boo, C#]
 ---
 ## Setting the stage
+
 In a recent project, I've had the need to use an embedded scripting language. The main purpose was to give the end user a [DSL](http://en.wikipedia.org/wiki/Domain_Specific_Language) like feeling, while retaining the power of a full-fledged scripting language. For a long time the project has been using [IronPython](http://www.codeplex.com/Wiki/View.aspx?ProjectName=IronPython) to provide this, but recently I've run into a few problems and started searching for something new.
+
 ## Problems with IronPython
 One of the strategies I've used is to have functions that return functions to provide a more humane syntax, like so: 
 
-{% codeblock lang:python %}
+``` python
 def TextWidth(width):
   def f(xq, xs):
     xs.SetTextWidth(width)
   return f
-{% endcodeblock %}
+```
 
 The idea here is that the users script will create a function that will be called later in the correct context and have the inner function take other arguments. However, it does make the script files more verbose and it can be hard to read the functions when they get more complex. Also it's very hard to add extra arguments to a given script context, since you have to find all the functions called in this context and add the argument to the inner function.
 Lately, I've been finding myself leaning more in the direction of Ayende's [anonymous base class](http://ayende.com/Blog/archive/2007/12/03/Implementing-a-DSL.aspx) approach. Basically, what you do is to provide a class that wraps the end user script and provides the scope of functions that can be called from the script. However, Python's [class mechanics](http://www.python.org/doc/2.5.2/tut/node11.html) lend themselves very badly to this method, because Python requires abundant amounts of self keywords. 
 Another idea I had using the anonymous base class approach was to separate the actual scripting logic from the API using the [bridge](http://en.wikipedia.org/wiki/Bridge_pattern) pattern. In pseudo-Python, it'd look something like this: 
 
-{% codeblock lang:python %}
+``` python
 def TextWidth(width):
   impl.SetTextWidth(width)
-{% endcodeblock %}
+```
 
 I will probably write another post about this, but the main idea is to be able to swap the implementation of the script logic on runtime. One use of this could be to find more errors when new scripts are entered, by using a script logic implementation that performs extra validation on the arguments instead of actually performing the intended actions.
 
@@ -39,7 +41,7 @@ One thing to keep in mind when using the compiler is that you can't unload the a
 ## Simple Example
 As a simple example, the below snippet will load up the Boo compiler, compile a simple script where I inject some code into a class and call the method via the C# interface. 
 
-{% codeblock lang:csharp %}
+``` csharp
 namespace BooConsoleApp
 {
     public interface IRunnable
@@ -83,7 +85,7 @@ class Test(IRunnable):
         }
     }
 }
-{% endcodeblock %}
+```
 
 And the output is as expected:
 {% img /post-images/run-boo-example.png %}
