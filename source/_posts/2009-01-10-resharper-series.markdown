@@ -13,12 +13,12 @@ I will be updating this post to serve as a reference and overview for the parts 
 Disclaimer: This blog is not affiliated with JetBrains.
  
 #### List of posts
- - [Part -2: Introduction & Motivation](http://www.rasmuskl.dk/post/ReSharper-Series-Part-2-Introduction-Motivation.aspx) 
- - [Part -1: My Visual Studio Setup](http://www.rasmuskl.dk/post/ReSharper-Series-Part-1-My-Visual-Studio-Setup.aspx)
- - [Part 0: Installation](http://www.rasmuskl.dk/post/ReSharper-Series-Part-0-Installation.aspx)
- - [Part 1: The Power of Alt+Enter](http://www.rasmuskl.dk/post/ReSharper-Series-Part-1-The-Power-of-Alt2bEnter.aspx)
- - [Part 2: Basic Navigation](http://www.rasmuskl.dk/post/ReSharper-Series-Part-2-Basic-Navigation.aspx)
- - [Part 3: Auto-completion / Intellisense](http://www.rasmuskl.dk/post/ReSharper-Series-Part-3-Auto-completion-Intellisense.aspx)
- - [Part 4: Moving Code](http://www.rasmuskl.dk/post/ReSharper-Series-Part-4-Moving-Code.aspx)
- - [Part 5: Generating Code](http://www.rasmuskl.dk/post/ReSharper-Series-Part-5-Generating-Code.aspx)
- - [Part 6: Find Usages](http://www.rasmuskl.dk/post/ReSharper-Series-Part-6-Find-Usages.aspx)
+ - [Part -2: Introduction & Motivation](/2009/01/10/resharper-series-part-2-introduction-motivation/) 
+ - [Part -1: My Visual Studio Setup](/2009/01/13/resharper-series-part-1-my-visual-studio-setup/)
+ - [Part 0: Installation](/2009/01/17/resharper-series-part-0-installation/)
+ - [Part 1: The Power of Alt+Enter](/2009/01/21/resharper-series-part-1-the-power-of-alt-enter/)
+ - [Part 2: Basic Navigation](/2009/01/27/resharper-series-part-2-basic-navigation/)
+ - [Part 3: Auto-completion / Intellisense](/2009/02/04/resharper-series-part-3-auto-completion-intellisense/)
+ - [Part 4: Moving Code](/2009/02/10/resharper-series-part-4-moving-code/)
+ - [Part 5: Generating Code](/2009/03/04/resharper-series-part-5-generating-code/)
+ - [Part 6: Find Usages](/2009/03/09/resharper-series-part-6-find-usages/)

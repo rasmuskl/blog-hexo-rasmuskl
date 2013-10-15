@@ -11,7 +11,7 @@ While C# is a great language, there is a quite of bit of the code that you write
  
 ## Generating Class Members
  
-We have already the power of **Alt+Enter** in one of the [earlier posts](http://www.rasmuskl.dk/post/ReSharper-Series-Part-1-The-Power-of-Alt2bEnter.aspx) - and this a tool that most people I have seen use for creating new code. It can do stuff like implementing missing methods and assigning creating backing fields for you from constructor arguments. If we use it on our balance argument that is unused (gray), ReSharper offers the following options:
+We have already the power of **Alt+Enter** in one of the [earlier posts](/2009/01/21/resharper-series-part-1-the-power-of-alt-enter/) - and this a tool that most people I have seen use for creating new code. It can do stuff like implementing missing methods and assigning creating backing fields for you from constructor arguments. If we use it on our balance argument that is unused (gray), ReSharper offers the following options:
  
 {% img /post-images/WindowsLiveWriter/ReSharperSeriesPart5_127BE/image_thumb.png %} 
  

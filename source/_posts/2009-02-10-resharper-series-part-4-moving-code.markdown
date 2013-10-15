@@ -5,7 +5,7 @@ date: 2009-02-10 22:33:08
 tags: [ReSharper]
 ---
 
-Welcome to the 4th part of my [ReSharper Series](http://www.rasmuskl.dk/post/ReSharper-Series.aspx). Today we are going to look at one of my new favorite ways to use ReSharper - to move code around. We haven't dipped into refactoring really yet, and today isn't really going to be that much about it - this is moving code on a lower syntactic level - shortcuts to save that copy / paste. In addition, we are going to have a little bit of code navigation that plays well with this feature.
+Welcome to the 4th part of my [ReSharper Series](/2009/01/10/resharper-series/). Today we are going to look at one of my new favorite ways to use ReSharper - to move code around. We haven't dipped into refactoring really yet, and today isn't really going to be that much about it - this is moving code on a lower syntactic level - shortcuts to save that copy / paste. In addition, we are going to have a little bit of code navigation that plays well with this feature.
  
 Furthermore, since many people use the VS binding mode in ReSharper, I am going to try and supply both binding sets in the future. I might even go back and change the previous posts at some point - today all the bindings I will show work for both binding modes though.
  

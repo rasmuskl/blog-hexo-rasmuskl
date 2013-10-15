@@ -57,4 +57,4 @@ This is more a matter of taste. Personally I’ve been using dark themes for Vis
   
 {% img /post-images/image_thumb_9.png %}
   
-If you want, you can download my personal theme [here](http://www.rasmuskl.dk/files/RKL-blue-theme-vs2010-2012-02-28.zip) (ReSharper specific). It’s the same as I’ve previously posted, except I’ve adjusted it to work properly with Razor views too.
+If you want, you can download my personal theme [here](/files/RKL-blue-theme-vs2010-2012-02-28.zip) (ReSharper specific). It’s the same as I’ve previously posted, except I’ve adjusted it to work properly with Razor views too.

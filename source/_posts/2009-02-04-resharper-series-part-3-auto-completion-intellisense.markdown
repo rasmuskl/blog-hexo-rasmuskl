@@ -17,7 +17,7 @@ The keyboard shortcuts for enabling this type of completion is either **Ctrl+Spa
  
 ## Import Completion
  
-Remember in [part 1](http://www.rasmuskl.dk/post/ReSharper-Series-Part-1-The-Power-of-Alt2bEnter.aspx) when I mentioned an easier way to import namespaces than typing out the full name and doing a quick fix (**Alt+Enter**)? Well this is it. With this auto-completion mode, you can as ReSharper to complete the names of types that are not imported yet, thus not requiring to type the full type name and getting the automatic import for free.
+Remember in [part 1](/2009/01/21/resharper-series-part-1-the-power-of-alt-enter/) when I mentioned an easier way to import namespaces than typing out the full name and doing a quick fix (**Alt+Enter**)? Well this is it. With this auto-completion mode, you can as ReSharper to complete the names of types that are not imported yet, thus not requiring to type the full type name and getting the automatic import for free.
  
 Say I wanted to use a LinkedList in my CheckBalance method shown above, the standard auto-completion isn't very helpful since I have not imported the collections namespace:
  
