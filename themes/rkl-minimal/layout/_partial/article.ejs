@@ -4,10 +4,12 @@
   <% } %>
   <div class="post-content">
     <header>
+      <%- partial('post/title') %>
       <% if (item.layout != 'page'){ %>
         <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
       <% } %>
-      <%- partial('post/title') %>
+      <%- partial('post/tag') %>
+      <div class="clearfix" />
     </header>
     <div class="entry">
       <% if (item.excerpt && index){ %>
@@ -17,10 +19,6 @@
       <% } %>
     </div>
     <footer>
-      <%- partial('post/category') %>
-      <%- partial('post/tag') %>
-      <%- partial('post/share') %>
-      <div class="clearfix"></div>
     </footer>
   </div>
 </article>
