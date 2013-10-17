@@ -2,5 +2,7 @@
   "name": "hexo",
   "version": "2.2.1",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "hexo-generator-feed": "0.0.10"
+  }
 }

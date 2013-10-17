@@ -47,6 +47,9 @@ archive: 0
 category: 0
 tag: 1
 
+plugins:
+  - hexo-generator-feed
+
 # Server
 ## Hexo uses Connect as a server
 ## You can customize the logger format as defined in
