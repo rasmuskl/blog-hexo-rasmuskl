@@ -1,8 +1,11 @@
 {
-  "name": "hexo",
+  "name": "blog-hexo-rasmuskl",
   "version": "2.2.1",
   "private": true,
   "dependencies": {
     "hexo-generator-feed": "0.0.10"
+  },
+  "devDependencies": {
+    "hexo": "~2.2.1"
   }
 }
