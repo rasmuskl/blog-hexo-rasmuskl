@@ -5,7 +5,7 @@ date: 2013-09-23 23:16:51
 tags: [Git, PowerShell, Tips]
 ---
 
-{% img right /wp-content/uploads/git.png %}
+{% img right /post-images/git.png %}
 
 I've been using git for a couple of years and thought I would document my setup. Git's linux heritage shows and while it's not many tools that I use via a shell, it's actually a real breeze. So I've mainly been using it through PowerShell.
 
