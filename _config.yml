@@ -83,4 +83,4 @@ exclude_generator:
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:
   type: github
-  repository: git@github.com:rasmuskl/blog-hexo-rasmuskl.git
+  repository: git@github.com:rasmuskl/rasmuskl.github.io.git
