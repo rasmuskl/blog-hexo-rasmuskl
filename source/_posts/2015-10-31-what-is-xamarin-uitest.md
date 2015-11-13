@@ -1,3 +1,4 @@
+layout: post
 title: What is Xamarin.UITest?
 tags: [Xamarin]
 date: 2015-10-31 16:42:42
