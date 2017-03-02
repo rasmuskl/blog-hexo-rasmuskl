@@ -2,11 +2,11 @@ title: About this blog
 date: 2013-10-20 12:17:46
 ---
 
-{% img right /post-images/rkl.png %}
+{% img right /post-images/rkl.jpg %}
 
 My name is Rasmus Kromann-Larsen and I'm a danish developer blogging about the technical side of my life, mostly .NET stuff, but also fundamental topics like design patterns, principles and productivity boosters.
 
-I'm currently work as developer at [Templafy](http://www.templafy.com).
+I'm currently working as a developer at [Templafy](http://www.templafy.com).
 
 In addition, I am a former core group member of the two largest .NET user groups in Denmark: [CNUG](http://www.cnug.dk) and [ANUG](http://www.anug.dk).
 
