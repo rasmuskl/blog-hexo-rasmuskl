@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "server": "hexo server",
-    "deploy": "hexo deploy"
+    "deploy": "hexo clean && hexo deploy"
   },
   "dependencies": {
     "hexo-generator-feed": "0.0.10"
