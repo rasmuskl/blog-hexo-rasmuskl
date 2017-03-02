@@ -2,6 +2,10 @@
   "name": "blog-hexo-rasmuskl",
   "version": "2.2.1",
   "private": true,
+  "scripts": {
+    "server": "hexo server",
+    "deploy": "hexo deploy"
+  },
   "dependencies": {
     "hexo-generator-feed": "0.0.10"
   },

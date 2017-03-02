@@ -6,9 +6,9 @@ date: 2013-10-20 12:17:46
 
 My name is Rasmus Kromann-Larsen and I'm a danish developer blogging about the technical side of my life, mostly .NET stuff, but also fundamental topics like design patterns, principles and productivity boosters.
 
-I currently work at [Xamarin](http://www.xamarin.com) on the Test Cloud team - pushing mobile testing to the next level.
+I'm currently work as developer at [Templafy](http://www.templafy.com).
 
-In addition, I am a core group member of the two largest .NET user groups in Denmark: [CNUG](http://www.cnug.dk) and [ANUG](http://www.anug.dk).
+In addition, I am a former core group member of the two largest .NET user groups in Denmark: [CNUG](http://www.cnug.dk) and [ANUG](http://www.anug.dk).
 
 ## Contact
 
