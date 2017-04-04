@@ -1,4 +1,4 @@
-title: React, Webpack and TypeScript talk at Microsoft
+title: React, Webpack and TypeScript presentation at Microsoft
 date: 2017-04-04 11:31:20
 categories: [Microsoft, React, Webpack, TypeScript, Presentations]
 ---
