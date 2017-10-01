@@ -1,9 +1,11 @@
 layout: post
 title: React, Webpack, TypeScript presentation at Templafy
 date: 2017-03-02 9:50:00
-tags: [Templafy, React, Webpack, TypeScript, Presentations]
+tags: [Templafy, React, Webpack, TypeScript, Presentations, CNUG]
 ---
 Yesterday at Templafy in collaboration with Copenhagen .NET User Group I presented my talk: "ASP.NET without Razor: React, Webpack and TypeScript".
+
+{% img /post-images/presentation-at-templafy.jpg %}
 
 Demos and slides can be found here: https://github.com/rasmuskl/react-webpack-typescript
 

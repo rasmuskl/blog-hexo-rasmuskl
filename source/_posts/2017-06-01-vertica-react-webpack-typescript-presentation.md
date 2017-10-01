@@ -1,14 +1,9 @@
-title: React, Webpack and TypeScript presentation at Microsoft
-date: 2017-04-04 11:31:20
-tags: [Microsoft, React, Webpack, TypeScript, Presentations, CNUG]
+title: post
+title: React, Webpack, TypeScript presentation at Vertica
+date: 2017-06-01 07:49:24
+tags: [React, Webpack, TypeScript, Presentations, ANUG]
 ---
-This Friday I gave a [repeat](https://www.meetup.com/Copenhagen-Net-User-Group/events/238615694/) of my "ASP.NET without Razor: React, Webpack and TypeScript" talk at Microsoft in Lyngby in collaboration with Copenhagen .NET User Group.
-
-The event had around 260 atteendees and the talk was a bit shorter this time, as I only had an hour (originally the talk was around 2 hours).
-
-It was a 2 talk event with Anders Hejlsberg following my session with a great introduction to TypeScript and where it it is headed.
-
-{% img /post-images/presentation-at-microsoft.jpg %}
+Yesterday at Vertica in collaboration with Aarhus .NET User Group I presented my talk: "ASP.NET without Razor: React, Webpack and TypeScript".
 
 Demos and slides can be found here: https://github.com/rasmuskl/react-webpack-typescript
 
