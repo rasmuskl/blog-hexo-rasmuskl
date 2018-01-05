@@ -2,6 +2,23 @@
 
 <body>
   <header id="header"><%- partial('_partial/header') %></header>
+  <style>
+    .adblock { width: 320px; height: 100px; }
+    @media(min-width: 500px) { .adblock { width: 468px; height: 60px; } }
+    @media(min-width: 800px) { .adblock { width: 728px; height: 90px; } }
+  </style>
+  </script>  
+  <div style="display: flex; align-items: center; justify-content: center; padding-top: 10px;">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle adblock"
+         style="display:block"
+         data-ad-client="ca-pub-3705163690722953"
+         data-ad-slot="3372225880"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
   <div id="content" class="inner">
     <%- body %>
   </div>
